@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="blog-detail.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="footer.css" />
+  </head>
+  <header>
+    <nav class="navbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a href="home.html" class="nav-link">
+            <i class="fa fa-home"></i>
+            <span class="nav-text">Trang chủ</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="create-blog.html" class="nav-link">
+            <i class="fa fa-pencil-alt"></i>
+            <span class="nav-text">Tạo bài viết</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="myblog.html" class="nav-link">
+            <i class="fa fa-book"></i>
+            <span class="nav-text">Bài viết của tôi</span>
+          </a>
+        </li>
+      </ul>
+
+      <form class="navbar-search">
+        <input type="text" class="search-box" placeholder="Tìm kiếm..." />
+        <button type="submit" class="search-button">Tìm kiếm</button>
+      </form>
+
+      <ul class="navbar-user ml-auto">
+        <li class="nav-user-item">
+          <a href="profile.html" class="nav-link">
+            <img
+              src="https://via.placeholder.com/30x30"
+              alt="User avatar"
+              class="user-avatar"
+            />
+            <span id="username" class="nav-text">{{username}}</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <body>
+    <div class="container">
+      <div class="blog_detail">
+        <h1>Blog Detail</h1>
+        <h2 id="blog-title"></h2>
+        <p id="blog-content"></p>
+        <div class="author-date">
+          <p class="author" id="blog-author"></p>
+          <p class="date" id="blog-date"></p>
+        </div>
+      </div>
+      <div class="comment__list" id="comment-list">
+        <h3>Comment</h3>
+      </div>
+      <div class="comment-form">
+        <form id="comment-form" class="comment-form__form" method="POST">
+          <label for="comment">Nhập comment:</label>
+          <textarea
+            name="comment"
+            id="comment-input"
+            class="comment-form__textarea"
+          ></textarea>
+          <button type="submit" class="comment-form__button">Comment</button>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script src="blog-detail.js"></script>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <h3>Blog Ptit</h3>
+      </div>
+      <div class="footer-links">
+        <ul>
+          <li><a href="#">Link 1</a></li>
+          <li><a href="#">Link 2</a></li>
+          <li><a href="#">Link 3</a></li>
+          <li><a href="#">Link 4</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h3>Contact Us</h3>
+        <p>
+          123 Main St<br />Anytown, USA 12345<br />Phone: 555-555-5555<br />Email:
+          info@company.com
+        </p>
+      </div>
+    </div>
+  </footer>
+</html>

@@ -1,0 +1,64 @@
+body {
+  background: #000;
+}
+
+#card-list {
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-top: 5.5rem;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  min-height: 30rem;
+  margin-bottom: 3rem;
+  gap: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 800px;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-author,
+.card-date {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.card-content {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.btn-del,
+.btn-upd {
+  padding: 5px 15px;
+  margin-top: 0.5rem;
+  margin-right: 1rem;
+  border: none;
+  color: #000;
+  font-weight: bold;
+}
+
+.btn-del {
+  background: rgb(254, 87, 87);
+}
+
+.btn-upd {
+  background: rgb(115, 248, 115);
+}
